@@ -1,3 +1,11 @@
+document.addEventListener('keydown', function(e) {
+    // 116 es el código de la tecla F5
+    if (e.keyCode === 116) {
+        e.preventDefault(); // Previene la recarga por defecto
+        window.location.href = 'index.html'; // Redirige al index
+    }
+});
+
 function filterSelection(category){
 
 let items = document.getElementsByClassName("item");
