@@ -512,15 +512,321 @@ background:#ffe9ec;
    RESPONSIVE
 ========================= */
 
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 800px) {
+
+    /* HEADER */
+
+    header {
+        padding: 20px 5%;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 80px 7%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+
+    /* PERFIL */
+
+    .perfil {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 7%;
+        gap: 40px;
+    }
+
+    .fotoperfil {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fotoperfil img {
+        width: 180px;
+        max-width: 100%;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .about h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .about p {
+        max-width: 100%;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .about h2 {
+        text-align: center;
+    }
+
+
+    /* SECCIONES */
+
+    section {
+        padding: 60px 6%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+
+    /* PORTFOLIO */
+
+    .portfolio {
+        margin: 40px auto 0 auto;
+        padding: 30px 5%;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 40px;
+    }
+
+    .project {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 50px auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .project-info h3 {
+        font-size: 21px;
+    }
+
+    .project-info p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* IMÁGENES */
+
+    .project-image img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+
+
+    /* GALERÍAS */
+
+    .gallery {
+        width: 100%;
+    }
+
+    .gallery-track img {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        max-height: 500px;
+        object-fit: contain;
+    }
+
+    .gallery-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+
+    .gallery-btn.prev {
+        left: 8px;
+    }
+
+    .gallery-btn.next {
+        right: 8px;
+    }
+
+
+    /* VIDEOS */
+
+    .project-video {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-video video {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+
+    .video-gallery .gallery-track video {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        max-height: 600px;
+        object-fit: contain;
+    }
+
+
+    /* FORMACIÓN */
+
+    .formacion {
+        padding: 60px 6%;
+    }
+
+    .formacion-header {
+        margin-bottom: 35px;
+    }
 
     .certificados {
         grid-template-columns: 1fr;
         max-width: 500px;
+        gap: 40px;
     }
 
-    .formacion {
+
+    /* TECNOLOGÍAS */
+
+    .skills-grid {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .skill {
+        padding: 13px 22px;
+        font-size: 14px;
+    }
+
+
+    /* CONTACTO */
+
+    .contact {
+        padding: 50px 7%;
+    }
+
+    .contact p {
+        font-size: 14px;
+        word-break: break-word;
+    }
+
+    .cajaBoton {
+        padding: 20px 0;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 25px 5%;
+    }
+
+}
+
+
+/* =========================
+   CELULARES PEQUEÑOS
+========================= */
+
+@media (max-width: 480px) {
+
+    .hero {
         padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 11px 20px;
+        font-size: 14px;
+    }
+
+
+    .perfil {
+        padding: 50px 6%;
+    }
+
+    .fotoperfil img {
+        width: 160px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+
+    .portfolio {
+        padding: 25px 4%;
+    }
+
+    .project {
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .project-info h3 {
+        font-size: 19px;
+    }
+
+    .project-info p {
+        font-size: 14px;
+    }
+
+
+    .gallery-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
+    }
+
+
+    .skills-grid {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .skill {
+        text-align: center;
+    }
+
+
+    .certificados {
+        gap: 35px;
     }
 
 }
